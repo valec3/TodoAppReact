@@ -1,9 +1,9 @@
 import {FilterButton, FilterButtonContainer, FiltersContainer,ItemsLeft } from "./TodoFilters.components"
 
-const TodoFilters = () => {
+const TodoFilters = ({total}) => {
     return (
         <FiltersContainer>
-            <ItemsLeft/>
+            <ItemsLeft total={total}/>
             <FilterButtonContainer>
                 <FilterButton action={()=>{}} active={"All"} filter={"All"}/>
                 <FilterButton action={()=>{}} active={"All"} filter={"Active"}/>
