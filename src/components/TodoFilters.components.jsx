@@ -24,6 +24,7 @@ const FilterButton=({action,active,filter})=>{
     return(
         <div className="flex">
             <button 
+                onClick={action}
                 className={`hover:text-white cursor-pointer transition-all duration-300 ease-in-out ${colorTextButton}`}
             >
                 {filter}
